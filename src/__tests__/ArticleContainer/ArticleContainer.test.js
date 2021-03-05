@@ -4,10 +4,7 @@ import {
   render,
   cleanup,
   waitFor,
-  getByTestId,
   fireEvent,
-  act,
-  wait,
 } from '@testing-library/react';
 import { getAllArticleIds, getArticle } from '../../services/articleApi';
 import {idsMock, idsMockFails, articleMokc, articleMokcundefined} from "../../MockData/mockData";

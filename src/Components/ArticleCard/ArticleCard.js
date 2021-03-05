@@ -33,7 +33,6 @@ const ArticleCardMemo = memo(function ArticleCard({ articleId, index }) {
       </div>
     </div>
   ) : null;
-  return <p>articke</p>;
 });
 
 export default ArticleCardMemo;
