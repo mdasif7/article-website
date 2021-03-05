@@ -36,5 +36,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/mappers/*.js",
+      "!src/Utils/*.js",
+      "!src/reportWebVitals.js",
+      "!src/**/index.js",
+      "!src/services/*.js"
+    ],
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
   }
 }

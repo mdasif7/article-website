@@ -8,7 +8,6 @@ const ArticleContainer = () => {
   const [ids, setIds] = useState([]);
   const [error, setError] = useState(false)
   const [noOfRecords, setnoOfRecords] = useState(NO_OF_RECORDS);
-  console.log(noOfRecords, 'dd', ids.length);
   useEffect(() => {
     getAllArticleIds().then((data) => {
       if(data && !data.success) setError(true)
@@ -34,7 +33,7 @@ const ArticleContainer = () => {
         {ids && ids.loading && <p>Loading.....</p>}
       </div>
       {ids && ids.data && ids.data.length>0 && noOfRecords < ids.data.length && (
-        <button className='more-class' onClick={() => onMoreClick()}>
+        <button className='more-class'  data-testid="more-button" onClick={() => onMoreClick()}>
           Show More Articles
         </button>
       )}
