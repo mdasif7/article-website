@@ -26,7 +26,7 @@ export const idsMock = {
       44,
     ],
     success: true,
-    laoding: false,
+    loading: false,
   };
   export const idsMockFails = {
     data: [],

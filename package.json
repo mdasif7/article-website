@@ -45,13 +45,11 @@
       "!src/mappers/*.js",
       "!src/Utils/*.js",
       "!src/reportWebVitals.js",
-      "!src/**/index.js",
-      "!src/services/*.js"
+      "!src/**/index.js"
     ],
     "coverageReporters": [
       "html",
-      "text",
-      "icov"
+      "text"
     ]
   }
 }

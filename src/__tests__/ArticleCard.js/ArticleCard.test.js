@@ -1,16 +1,16 @@
 import React from 'react';
-import ArticleCard from '../../../Components/ArticleCard';
+import ArticleCard from '../../Components/ArticleCard';
 import {
   render,
   cleanup,
   waitFor,
 } from '@testing-library/react';
-import {  getArticle } from '../../../services/articleApi';
-import {articleMokcundefined} from "../../../MockData/mockData";
+import {  getArticle } from '../../services/articleApi';
+import {articleMokcundefined} from "../../MockData/mockData";
 
 beforeEach(cleanup);
 
-jest.mock('../../../services/articleApi', () => ({
+jest.mock('../../services/articleApi', () => ({
   getArticle: jest.fn(),
 }));
 
